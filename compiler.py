@@ -59,6 +59,7 @@ def tokenizer(input_expression):
         return tokens
 
 
+
 def parser(tokens):
     global current
     current = 0
@@ -97,6 +98,10 @@ def parser(tokens):
         ast['body'].append(walk())
 
     return ast
+
+
+
+
 
 
 def compiler(input_expression):
